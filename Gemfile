@@ -11,9 +11,18 @@ gem "mongoid", "~> 3.0.0"
 
 group :development do
   gem 'rspec-rails'
-  gem 'fabrication'
 end
 
+group :test do
+  gem 'turn', '< 0.8.3'
+  gem 'mongoid-rspec'
+  gem 'shoulda-matchers'
+  gem 'fabrication'
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'guard-rails'
+  gem 'guard-bundler'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
