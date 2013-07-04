@@ -8,6 +8,13 @@ gem 'rails', '3.2.13'
 #gem 'sqlite3'
 gem "mongoid", "~> 3.0.0"
 
+
+group :development do
+  gem 'rspec-rails'
+  gem 'fabrication'
+end
+
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
