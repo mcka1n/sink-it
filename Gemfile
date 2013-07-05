@@ -7,7 +7,7 @@ gem 'rails', '3.2.13'
 
 #gem 'sqlite3'
 gem "mongoid", "~> 3.0.0"
-
+gem "httparty"
 
 group :development do
   gem 'rspec-rails'
