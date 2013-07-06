@@ -26,5 +26,10 @@ class CommandCenter
 
   end
 
+  def self.fire(game_id, x, y)
+    response = HTTParty.post(base_uri+"/nuke", :body => { :id => game_id, :x => x, :y => y}.to_json).to_json
+    response_hash = JSON.parse(response)
+  end
+
 
 end
