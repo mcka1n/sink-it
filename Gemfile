@@ -6,9 +6,10 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 #gem 'sqlite3'
-gem "mongoid", "~> 3.0.13"
-gem "httparty"
-gem "devise"
+gem 'mongoid', '~> 3.0.13'
+gem 'httparty'
+gem 'devise'
+gem 'rabl', '~> 0.8.5'
 
 group :development do
   gem 'rspec-rails'

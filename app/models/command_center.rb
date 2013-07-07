@@ -14,7 +14,9 @@ class CommandCenter
 
 
   def self.start()
-    response = HTTParty.post(base_uri+"/register", :body => { :name => "mcka1n", :email => "ermp@galileo.edu" }.to_json).to_json
+    puts current_user.name
+    puts current_user.email
+    response = HTTParty.post(base_uri+"/register", :body => { :name => current_user.name, :email => current_user.email }.to_json).to_json
     response_hash = JSON.parse(response)
     
     if response
