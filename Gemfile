@@ -11,6 +11,7 @@ gem 'httparty'
 gem 'devise'
 gem 'rabl', '~> 0.8.5'
 
+
 group :development do
   gem 'rspec-rails'
 end
@@ -38,7 +39,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+gem 'angularjs-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
