@@ -64,5 +64,8 @@ module SinkIt
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # IF I'm gonna be deploying to Heroku I want to have this configuration:
+    config.assets.initialize_on_precompile = false
   end
 end
